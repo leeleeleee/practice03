@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class GoodsApp {
 	public static void main(String[] args) {
-		Scanner scanner = Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		Goods goods = new Goods();
 		String[] name1 = new String[3];
 		int[] price1 = new int[3];

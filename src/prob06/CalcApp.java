@@ -21,14 +21,24 @@ public class CalcApp {
 			}
 			
 			String[] tokens = expression.split( " " );
+			int a = Integer.parseInt(tokens[0]);
+			int b = Integer.parseInt(tokens[2]);
 			switch( tokens[1] ) {
-			case "+" :
+				case "+" :
+					System.out.println(a + "+" + b + "=" + (a+b));
+					break;
+				case "*" :
+					System.out.println(a + "*" + b + "=" + a*b);
+					break;
+				case "-":
+					System.out.println(a + "-" + b + "=" + (a-b));
+					break;
+				case "/":
+					System.out.println(a + "/" + b + "=" + a/b);
+					break;
 				
-				break;
-			case "*" :
-				break;
-				
-			  default:
+			    default:
+			    	System.out.println("잘못입력하셨습니다.");
 				break;
 			}
 		}

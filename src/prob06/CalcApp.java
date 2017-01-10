@@ -13,7 +13,24 @@ public class CalcApp {
 		while( true ) {
 			
 			/*  코드를 완성 합니다 */
+			System.out.println(">>");
+			String expression = scanner.nextLine();
 			
+			if( expression.equals("quit") ) {
+				break;
+			}
+			
+			String[] tokens = expression.split( " " );
+			switch( tokens[1] ) {
+			case "+" :
+				
+				break;
+			case "*" :
+				break;
+				
+			  default:
+				break;
+			}
 		}
 		
 		scanner.close();
